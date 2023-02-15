@@ -101,11 +101,9 @@ To run the project, execute the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
-### Author1
-
-### Author1
+### Abiola Ayodele Martins
 
 - GitHub: [@Abmart0803](https://github.com/Abmart0803)
 - Twitter: [@MartinsAbmart](https://twitter.com/MartinsAbmart)
