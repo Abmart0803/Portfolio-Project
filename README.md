@@ -73,7 +73,9 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need to run the following command:
 
-- npm init -y
+- A Code Editor
+- A web browser
+- npm
 
 ### Setup
 
@@ -126,7 +128,7 @@ The following features  will be added in future:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Abmart0803/Portfolio-Project/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
