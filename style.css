@@ -32,23 +32,34 @@ body {
 }
 
 .nav-container {
-  width: 100%;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem;
+}
+
+.major-container {
+  display: flex;
 }
 
 .nav-logo {
   padding: 10px;
   font: 'Poppins', sans-serif;
   font-weight: bold;
+  font-size: 2rem;
   size: 18px;
   color: #6070ff;
 }
 
 .connect {
   margin: 20px 0 20px 0;
+  color: #7f8cff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 h1 {
@@ -80,14 +91,18 @@ h1 {
   margin: 0;
 }
 
+.list-nav {
+  padding-bottom: 20px;
+}
+
 .list-items {
   display: flex;
   gap: 30px;
 }
 
 .list-items img {
-  height: 15px;
-  width: 15px;
+  height: 25px;
+  width: 25px;
 }
 
 .list-items li {
@@ -105,7 +120,217 @@ a {
   text-decoration: none;
 }
 
-/* //Media Query here.  */
+/* // Project section.  */
+.project-container {
+  padding-top: 70px;
+  margin: 50px;
+}
+
+.project-title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  color: #172b4d;
+  padding: 20px 10px 10px 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.project-meta {
+  display: flex;
+  padding: 8px 0;
+  width: 100%;
+  gap: 12px;
+  align-items: center;
+}
+
+.project-meta p {
+  font-size: 13px;
+  color: #7a869a;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.project-card {
+  display: block;
+}
+
+.project-note {
+  font-size: 13px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.project-skills {
+  padding-bottom: 10px;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.project-skills li {
+  display: inline;
+  padding: 4px 12px;
+  border-radius: 8px;
+  background-color: #ebebff;
+  font-size: 15px;
+  color: #162ae3;
+}
+
+.project-note p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #344563;
+  padding-top: 10px;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  gap: 10px;
+  width: 122px;
+  height: 48px;
+  bottom: 8px;
+  border-radius: 8px;
+  color: #396df2;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 14px 0;
+  font-weight: bold;
+  border: 1px solid;
+  border-color: #162ae3;
+}
+
+.portfolio-button-container {
+  padding-bottom: 80px;
+}
+
+.round {
+  width: 8px;
+  height: 8px;
+  background-color: #c1c7d0;
+  border-radius: 50%;
+}
+
+.project-tag {
+  padding-top: 20px;
+}
+
+/* //About section. */
+.about-secton {
+  display: flex;
+  margin: 50px;
+}
+
+.about-button {
+  display: flex;
+  color: #396df2;
+  border: 1px solid blue;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.about-button-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 0 20px 0;
+  gap: 10px;
+  border-radius: 8px;
+  width: 162px;
+  height: 48px;
+}
+
+/* //Language styles here.  */
+
+.skill-section {
+  width: 100%;
+}
+
+.skill-dropdown-container {
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18px;
+}
+
+.skill-dropdown-border {
+  border-bottom: 1px solid #dfe1e6;
+}
+
+.skill-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+.arrow-button {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.arrow-down-button {
+  transform: rotate(90deg);
+}
+
+.skill-dropdown-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 15px;
+  gap: 12px;
+}
+
+.skill-dropdown-content li {
+  height: 66px;
+  background-color: #f7f7f9;
+  width: 100%;
+  padding: 8px 16px;
+  display: flex;
+  border-radius: 8px;
+}
+
+.skill-dropdown-content span {
+  display: inline-block;
+  margin: auto 17px;
+  color: #253858;
+  font-size: 15px;
+}
+
+.about-container {
+  padding: 40px;
+}
+
+
+/* //Media Query  start here.  */
 @media (min-width: 768px) {
   .toolbar {
     width: 300px;
