@@ -224,13 +224,6 @@ ul {
   transition: all 300 ease-in-out;
 }
 
-.about-button:hover {
-  background: blue;
-  color: white;
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-  transition: all 300 ease-in-out;
-}
-
 .portfolio-button-container {
   padding-bottom: 80px;
 }
@@ -265,6 +258,13 @@ ul {
   line-height: 24px;
 }
 
+.about-button:hover {
+  background: blue;
+  color: white;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transition: all 300 ease-in-out;
+}
+
 .about-button-container {
   box-sizing: border-box;
   display: flex;
@@ -283,7 +283,7 @@ ul {
 }
 
 .framehouse {
-  display: flex; 
+  display: flex;
 }
 
 .skill-dropdown-container {
