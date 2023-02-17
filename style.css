@@ -159,7 +159,8 @@ a {
 }
 
 .project-card {
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-note {
@@ -216,6 +217,20 @@ ul {
   border-color: #162ae3;
 }
 
+.button:hover {
+  background-color: #6070ff;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transition: all 300 ease-in-out;
+}
+
+.about-button:hover {
+  background: blue;
+  color: white;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transition: all 300 ease-in-out;
+}
+
 .portfolio-button-container {
   padding-bottom: 80px;
 }
@@ -267,6 +282,10 @@ ul {
   width: 100%;
 }
 
+.framehouse {
+  display: flex; 
+}
+
 .skill-dropdown-container {
   height: 72px;
   display: flex;
@@ -310,9 +329,7 @@ ul {
 }
 
 .skill-dropdown-content li {
-  height: 66px;
   background-color: #f7f7f9;
-  width: 100%;
   padding: 8px 16px;
   display: flex;
   border-radius: 8px;
