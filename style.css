@@ -358,7 +358,6 @@ ul {
 
 #contact_form {
   height: 769px;
-  padding: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -457,7 +456,7 @@ form {
   align-items: stretch;
   background-color: white;
   flex-direction: row;
-  padding: 12px 0px;
+  padding: 12px 0;
   width: 140px;
   height: 48px;
   left: 24px;
@@ -467,7 +466,7 @@ form {
 .contact_button:hover {
   width: 300px;
   scale: (1 0.5);
-  background-color: purple
+  background-color: purple;
 }
 
 /* //Media Query  start here.  */
@@ -480,5 +479,4 @@ form {
   .ambuger-menu {
     display: none;
   }
-  
 }
