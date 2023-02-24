@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"); */
 
 * {
   margin: 0;
@@ -10,7 +12,7 @@ body {
   max-width: 100%;
   min-height: 100vh;
   background-color: #f0f0f0;
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #344563;
@@ -36,11 +38,16 @@ header {
 }
 
 .nav-container {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding-bottom: 120px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  /* padding: 1.5rem; */
 }
 
 section {
@@ -50,7 +57,7 @@ section {
 
 section:nth-of-type(1) {
   border-bottom-left-radius: 80px;
-  background-image: url(./images/hero_bg.png);
+  /* background-image: url(./images/hero_bg.png); */
   background-repeat: no-repeat;
 }
 
@@ -58,10 +65,12 @@ section:nth-of-type(1) {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   color: #344563;
   padding-top: 30px;
+  /* padding-left: 30px; */
+  /* padding-right: 30px; */
 }
 
 .section-head h1,
@@ -74,6 +83,30 @@ h2 {
   align-items: center;
   color: #172b4d;
   font-style: normal;
+}
+
+.about-connect  {
+  width: 117px;
+  height: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+}
+
+.head-connect {
+  width: 117px;
+  height: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .self-container {
@@ -288,19 +321,36 @@ hr.hr-line {
   font-weight: bold;
 }
 
+.portfolio_button:hover {
+  background: blue;
+  color: white;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  transition: all 300 ease-in-out;
+}
+
 .about_button {
   display: flex;
   color: blue;
-  justify-content: center;
+  color: red;
+  /* justify-content: center; */
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
   align-items: center;
   padding: 12px;
   border-radius: 4px;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 17px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
   line-height: 24px;
   cursor: pointer;
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
-  transition: all 300 ease-in-out;
+  /* color: red; */
+  /* padding: 0 10px 20px 0; */
+  /* padding-bottom: 10px; */
+  /* box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24); */
+  /* transition: all 300 ease-in-out; */
 }
 
 .about_button:hover {
@@ -333,47 +383,56 @@ hr.hr-line {
   margin-top: -50px;
 }
 
-.form_container {
-  background-image: url(./images/contact_form.png);
-  background-repeat: no-repeat;
-}
+
 
 .contact_header1 {
-  display: flex;
+  display: flex; 
   color: white;
   padding-left: 80px;
   padding-top: 103px;
+  padding-right: 30px; 
   height: 56px;
+  text-align: center;
   top: 4734px;
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   size: 40px;
   line-height: 52px;
   align-items: center;
 }
 
-.contact_header2 {
+.header2-house {
   font-family: Poppins, sans-serif;
-  font-style: normal;
+  font-style: normal; 
+  justify-content: center;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
   color: #fff;
+  margin-bottom: 10px;
   margin: 0 24px 58px 24px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 20px; 
   padding: 50px 24px 15px 24px;
-  width: 327px;
+  width: 569px;
   height: 102px;
   left: 24px;
   top: 4802px;
+  color: #ebebff; 
 }
 
-form {
+/* /* form {
+  width: 100%;
+} */
+
+.form {
   width: 100%;
 }
 
 .contact_form {
-  padding-top: 70px;
+  padding-top: 30px;
 }
 
 .contact_form ul {
@@ -387,20 +446,28 @@ form {
 }
 
 .contact_form ul li {
+  position: relative;
+  background: #FFFFFF;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
   padding: 0;
   width: 100%;
   display: flex;
-  justify-content: left;
-}
+  border: 1px solid #CFD8DC;
+  justify-content: center;
+} 
 
 .contact_form ul li input {
   border-radius: 8px;
-  width: 100%;
+  width: 63%;
   padding: 14px 15.5px;
   border: 1px;
 }
 
-.contact_form ul li textarea {
+/* /* .contact_form ul li textarea { */
+  .contact_form ul li textarea {
   width: 327px;
   padding: 15px 15.5px;
   height: 102px;
@@ -422,9 +489,10 @@ form {
   height: 48px;
   left: 24px;
   top: 5317px;
-}
+} */
 
-#socials {
+/* /* #socials { */
+  #socials {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -433,9 +501,10 @@ form {
   background-position: top right;
   background-size: contain;
   padding: 24px 0;
-}
+} 
 
-.contact_socials {
+/* /* .contact_socials { */
+  .contat_socials {
   display: flex;
   gap: 20px;
   list-style: none;
@@ -457,7 +526,7 @@ form {
 
 .footer #social {
   margin-left: 0;
-}
+} 
 
 .toolbar {
   display: none;
@@ -487,6 +556,10 @@ form {
   display: none;
 }
 
+.section-head {
+  background-image: url(./images/header-shapes\ mobile.png);
+}
+
 .line-image {
   display: flex;
   padding-left: 120px;
@@ -497,13 +570,25 @@ form {
   display: none;
 }
 
+.form_container {
+  background-image: url(./images/contact_form.png);
+  background-repeat: no-repeat;
+}
+
 /* below code  from 768px to 992px, desktop styles start here */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .toolbar {
     width: 300px;
-    display: block;
+    display: flex;
     padding-right: 60px;
   }
+
+  /* .form_container { */
+    /* background-image: none; */
+    /* background-image: url(./images/Contact\ form\ Background\ deskto.jpg); */
+    
+    /* background-repeat: no-repeat; */
+  /* } */
 
   .project-card {
     flex-direction: row;
@@ -530,7 +615,8 @@ form {
   }
 
   .section-head {
-    background-image: url(./image/Header\ bg.png);
+    background-image: url(./images/Header\ desktopbackground.png);
+    width: 90%;
   }
 
   .major-container {
@@ -564,7 +650,79 @@ form {
     display: none;
   }
 
-  #contact_form {
+  /* //Contat section start here. */
+
+  .contact_section {
+    background-image: url(./images/contact-setion-deskbg.png);
+    background-repeat: no-repeat;
+    /* background-position: cover; */
+    width: 100%;
+  }
+
+  .form_container {
+    background-image: url(./images/form-container-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 650px;
+    width: 100%;
+    padding-left: 32%;
+  }
+
+  /* .contact_header {
+    height: 56px;
+    font-weight: 700;
+    line-height: 52px;
+    text-align: center;
+    width: 60%;
+    padding-left: 8%;
+    color: red;
+  } */
+
+  /* .contact_paragraph {
+    width: 50%;
+    height: 102px;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
+    padding: 19% 2% 0 2%;
+  }
+
+  textarea {
+    border-radius: 2px;
+    width: 33%;
+  }
+
+  .form ul {
+    margin: 0;
+  }
+
+  .get_btn {
+    margin-top: 215px;
+    padding-right: 145px;
+  }
+
+  .form_input input {
+    width: 51%;
+    border: #cfd8dc;
+    border-radius: 5px;
+    height: 48px;
+  }
+
+  .shape {
+    display: none;
+  }
+
+  .Get_btn button {
+    margin-top: 223px;
+    margin-left: 150px;
+    width: 20%;
+    height: 50px;
+  } */
+  /* #contact_form {
     height: 769px;
     padding: 0;
     display: flex;
@@ -575,13 +733,13 @@ form {
     background-color: #6070ff;
     background-position: right;
     margin-top: -50px;
-  }
+  } */
 
-  .form_container {
-    background-image: url(./images/contact_form.png);
-    background-repeat: no-repeat;
-    background-position: 100%;
-  }
+  /* .form_container { */
+    /* background-image: url(./images/contact_form.png); */
+    /* background-repeat: no-repeat;
+    background-position: 100%; */
+  /* } */
 
   .left-img-desktop {
     display: block;

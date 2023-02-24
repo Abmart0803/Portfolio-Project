@@ -25,8 +25,8 @@
         <div class="toolbar">
           <ul class="toolbar_list">
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#aboutt">About</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#contact">About</a></li>
           </ul>
         </div>
       </div>
@@ -36,16 +36,16 @@
         <div class="major-container">
           <div class="minor-container">
             <div class="section-head">
-              <h1>I am Abiola, Glad to see you</h1>
+              <h1>I am Abiola,<br> Glad to see you!</h1>
               <p>
                 I am a Software developer, i can help you build a product,
-                feature or website, look through some of my works and
-                experience! if you like what you see and have a project you need
-                coded dont hesitate to contact me.
+                feature or website, look through<br> some of my works and
+                experience! if you like what you see and have a project you need 
+                <br>coded dont hesitate to contact me.
               </p>
             </div>
             <div class="self-container">
-              <a href="">LET'S CONNECT</a>
+              <a class="head-connect" href="">LET'S CONNECT</a>
               <div class="list-nav">
                 <ul class="list-items">
                   <li>
@@ -240,45 +240,54 @@
               and have a project you need coded, don’t hestiate to contact me.
             </p>
             <div class="self-container">
-              <h2>LET'S CONNECT</h2> 
-              <button class="about_button">Get my Resume</button>
+              <h2 class="about-connect">LET'S CONNECT</h2> 
               <div class="list-nav">
-                <ul class="list-items skill-items">
+                <ul class="list-items">
                   <li>
-                    <a href="https://github.com/Abmart0803">
-                      <img
-                        src="./images/github.png"
-                        alt="my social handle images"/>
+                    <a href="https://twitter.com/MartinsAbmart">
+                      <img class="social-icons"
+                        src="./images/twitter.png"
+                        alt="my social handle images"
+                      />
                     </a>
+                  </li>
                   <li>
-                  <li>
-                    <a href="https://www.linkedin.com/in/abmartcodingworld">
-                      <img
-                      src="./images/Linkedin icon.png"
-                      alt="my social handle images"/>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/Abmart0803">
-                        <img src="./images/angellist.png"
-                          alt="my social handle images"/>
-                      </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/MartinsAbmart">
-                        <img src="./images/twitter.png"
-                        alt="my social handle images"/>
+                    <a href="https://www.linkedin.com/in/abmartcodingworld/">
+                      <img class="social-icons"
+                        src="./images/Linkedin icon.png"
+                        alt="my social handle images"
+                      />
                     </a>
-                  </li>                  
+                  </li>
                   <li>
                     <a href="https://medium.com/@abmartbtc">
-                      <img
+                      <img class="social-icons"
                         src="./images/medium.png"
-                        alt="my social handle images"/>
+                        alt="my social handle images"
+                      />
                     </a>
-                  </li>                  
+                  </li>
+                  <li>
+                    <a href="https://github.com/Abmart0803">
+                      <img class="social-icons"
+                        src="./images/github.png"
+                        alt="my social handle images"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Abmart0803">
+                      <img class="social-icons"
+                        src="./images/angellist.png"
+                        alt="my social handle images"
+                      />
+                    </a>
+                  </li>
                 </ul>
               </div>
+              
+                <button class="about_button">Get My Resume</button>
+                          
             </div>
           </div>
          
@@ -315,20 +324,21 @@
         </div>
       </section>
 
-      <section id="contact_form">
+      <section class="contact_section">
         <div class="form_container">
           <h2 class="contact_header1">
             Contact me
           </h2>
-          <p class="contact_header2">
-            If you have an application you are interested in developing, a feature that you need to buit or
-            a project that needs coding. I'd love to help with it.
-          </p>
+          <div class="header2-house">
+            <p class="contact_header2">
+              If you have an application you are interested in developing, a feature that you need to buit or
+              a project that needs coding. I'd love to help with it.
+            </p>
+          </div>
           <form
             action="https://formspree.io/f/xeqdybag"
             method="POST"
-            class="contact_form"
-          >
+            class="contact_form">
             <ul>
               <li>
                 <input
@@ -358,6 +368,7 @@
                   id="message"
                   placeholder="Type your message here"
                   rows="5"
+                  cols="50"
                   required
                   maxlength="500"
                 ></textarea>
@@ -366,36 +377,10 @@
             </ul>
             <img class="line-image" src="./images/Shape.png" alt="line Shape">
           </form>
+          
         </section>
-        <footer class="footer">
-          <section id="socials">
-            <ul class="contact_socials">
-              <li class="icons icons1">
-                <a href="https://twitter.com/MartinsAbmart">
-                  <i class="fa-brands fa-twitter"></i
-                ></a>
-              </li>
-              <li class="icons icons2">
-                <a href="https://www.linkedin.com/in/abmartcodingworld">
-                  <i class="fa-brands fa-linkedin-in"></i
-                ></a>
-              </li>
-              <li class="icons icons3">
-                <a href=""> <i class="fa-sharp fa-solid fa-m"></i></a>
-              </li>
-              <li class="icons icons4">
-                <a href="https://github.com/Abmart0803">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </li>
-              <li class="icons icons5">
-                <a href=""> <i class="fa-brands fa-angellist"></i></a>
-              </li>
-            </ul>
-        </div>
-        
-        </section>
-      </footer>
+       </main>
+    
      </main>  
   </body>
 </html>
