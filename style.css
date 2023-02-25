@@ -134,7 +134,7 @@ a {
 .project-card {
   flex-direction: column;
   gap: 24px;
-  border: 1px solid rgb(217, 238, 246);
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
 }
@@ -496,12 +496,26 @@ form {
   display: none;
 }
 
+.contact_section {
+  background-image: url(./images/contact-form\ backgroung.png);
+}
+
 /* below code  from 768px to 992px, desktop styles start here */
 @media (min-width: 768px) {
   .toolbar {
     width: 300px;
     display: block;
     padding-right: 60px;
+  }
+
+  .project-card {
+    background: #fff;
+    flex-direction: row;
+  }
+
+  .project-card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(33, 33, 33, 0.2);
   }
 
   .desktop-project-title {
@@ -520,8 +534,8 @@ form {
     display: none;
   }
 
-  .section-head {
-    /* background-image: url(./image/Header\ bg.png); */
+  .head-section {
+    padding-bottom: 20%;
   }
 
   .major-container {
@@ -559,10 +573,6 @@ form {
 
   .desktop {
     display: block;
-  }
-
-  .project-card {
-    flex-direction: row;
   }
 
   .project-card:nth-of-type(even) {
@@ -605,6 +615,10 @@ form {
     flex-direction: column;
     gap: 24px;
     padding-bottom: 40px;
+  }
+
+  .contact_section {
+    background-image: url(./images/contact-form\ backgroung.png);
   }
 
   section {
