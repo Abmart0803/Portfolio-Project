@@ -304,7 +304,6 @@ hr.hr-line {
   font-size: 17px;
   line-height: 24px;
   cursor: pointer;
-  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
   transition: all 300 ease-in-out;
 }
 
