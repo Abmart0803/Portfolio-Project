@@ -507,22 +507,22 @@ form {
 }
 
 @keyframes rotate {
-  0%{
+  0% {
     color: #8993a4;
     transform: rotate(0);
   }
 
-  50%{
+  50% {
     color: #204fa1;
     transform: rotate(170deg);
   }
 
-  75%{
+  75% {
     color: #b0171e;
     transform: rotate(270deg);
   }
 
-  100%{
+  100% {
     color: #0c8d0c;
     transform: rotate(360deg);
   }
