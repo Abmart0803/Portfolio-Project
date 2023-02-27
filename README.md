@@ -128,7 +128,7 @@ The following features  will be added in future:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Abmart0803/Portfolio-Project/issues).
+Feel free to check the [issues page] (https://github.com/Abmart0803/Portfolio-Project/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
