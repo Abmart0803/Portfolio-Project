@@ -500,6 +500,34 @@ form {
   background-image: url(./images/contact-form\ backgroung.png);
 }
 
+/* //Animation & Transition start here.  */
+
+.nav-logo {
+  animation: rotate infinite  4s;
+}
+
+@keyframes rotate {
+  0%{
+    color: #8993a4;
+    transform: rotate(0);
+  }
+
+  50%{
+    color: #204fa1;
+    transform: rotate(170deg);
+  }
+
+  75%{
+    color: #b0171e;
+    transform: rotate(270deg);
+  }
+
+  100%{
+    color: #0c8d0c;
+    transform: rotate(360deg);
+  }
+}
+
 /* below code  from 768px to 992px, desktop styles start here */
 @media (min-width: 768px) {
   .toolbar {
