@@ -605,6 +605,8 @@ form {
 
   .desktop {
     display: block;
+
+    /* width: 100%; */
   }
 
   .project-card:nth-of-type(even) {
