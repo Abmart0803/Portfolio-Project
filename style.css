@@ -20,7 +20,7 @@ header {
   background-color: #fff;
 }
 
-.ambuger-menu {
+.hambuger-menu {
   display: flex;
   flex-direction: column;
 }
@@ -531,12 +531,50 @@ form {
   border-radius: 10px;
 }
 
+.menu_items {
+  /* display: none; */
+}
+
+menu {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+.menu_items {
+  box-sizing: border-box;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 100;
+  height: 90vh;
+  margin: 0;
+  padding: 30px 28px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 30px;
+  display: none;
+  flex-direction: column;
+  gap: 34px;
+}
+
 /* below code  from 768px to 992px, desktop styles start here */
 @media (min-width: 768px) {
   .toolbar {
     width: 300px;
     display: block;
     padding-right: 60px;
+  }
+
+  .closeIcon {
+    display: none;
+  }
+
+  .menu_items {
+    display: none;
   }
 
   img {
@@ -648,7 +686,7 @@ form {
     color: #344563;
   }
 
-  .ambuger-menu {
+  .hambuger-menu {
     display: none;
   }
 

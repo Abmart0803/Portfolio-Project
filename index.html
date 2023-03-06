@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    
     <title>Welcome to Martins' Full Stack Developer Portfolio Website.</title>
   </head>
   <body>
@@ -13,22 +14,29 @@
         <div class="nav-logo">
           <a class="nav-logo" href="">Abmart</a>
         </div>
+
         <nav class="nav-link">
-          <div class="nav-menu">
-            <div class="ambuger-menu">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
+          <div class="toolbar">
+            <ul class="toolbar_list">
+              <li><a class="toolbar-a" href="#portfolio">Portfolio</a></li>
+              <li><a class="toolbar-a" href="#about">About</a></li>
+              <li><a class="toolbar-a" href="#contact_form">Contact</a></li>
+            </ul>
           </div>
+
+          <!-- <div class="close"> -->
+            <span class="closeIcon">x</span>
+          <!-- </div> -->
+
+          <div class="nav-menu">
+            <a href="javascript:void(0);" class="hambuger-menu" >
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </a>
+          </div>          
         </nav>
-        <div class="toolbar">
-          <ul class="toolbar_list">
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact_form">Contact</a></li>
-          </ul>
-        </div>
+       
       </div>
     </header>
     <main>
@@ -384,5 +392,6 @@
         </section>
         
      </main>  
+     <script src="./menu.js" type="module"></script>
   </body>
 </html>
