@@ -37,6 +37,8 @@ section.mobile-menu {
   width: 100%;
   cursor: pointer;
   display: none;
+  z-index: 1;
+  backdrop-filter: blur(5px);
 }
 
 section.visible {
@@ -66,10 +68,6 @@ section.mobile-menu a {
   font-weight: 700;
   line-height: 2rem;
   text-decoration: none;
-  animation: animate 2s;
-}
-
-.logo {
   animation: rotate infinite  4s;
 }
 
