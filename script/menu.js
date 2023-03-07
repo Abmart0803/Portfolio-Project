@@ -11,8 +11,10 @@ for (let i = 0; i < menuItems.length; i += 1) {
 
 menuBtn.addEventListener('click', () => {
   menuSection.classList.add('visible');
+  menuBtn.style.display = 'none';
 });
 
 closeButton.addEventListener('click', () => {
   menuSection.classList.remove('visible');
+  menuBtn.style.display = 'block';
 });
