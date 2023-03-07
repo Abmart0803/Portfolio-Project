@@ -13,3 +13,6 @@ menuBtn.addEventListener('click', () => {
   menuSection.classList.add('visible');
 });
 
+closeButton.addEventListener('click', () => {
+  menuSection.classList.remove('visible');
+});
