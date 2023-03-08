@@ -487,6 +487,24 @@ section.mobile-menu a {
   margin-top: 2rem;
 }
 
+/* client validation css. */
+.my-form li {
+  list-style-type: none;
+}
+
+.errorsDisplay {
+  padding: 5px;
+  width: 300px;
+  border-radius: 10px;
+  z-index: -1;
+  border: 1px solid red;
+  display: none;
+  font-size: 18px;
+  line-height: 1.5em;
+  background: #ffdce2;
+  font-weight: bold;
+}
+
 /* desktop version css styles */
 
 @media screen and (min-width: 768px) {
@@ -497,6 +515,19 @@ section.mobile-menu a {
   .header {
     padding-left: 15.5rem;
     padding-right: 15.5rem;
+  }
+
+  .errorsDisplay {
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+    z-index: -1;
+    border: 1px solid red;
+    display: none;
+    font-size: 18px;
+    line-height: 1.5em;
+    background: #ffdce2;
+    font-weight: bold;
   }
 
   .links {
