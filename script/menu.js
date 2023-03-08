@@ -266,4 +266,11 @@ const closePopup = () => {
   }
 };
 
+const cardButton = document.querySelectorAll('.popup-card-button');
+cardButton.forEach((button) => {
+  button.addEventListener('click', () => {
+    document.body.style.overflow = 'hidden';
+    createPopup(button, closePopup);
+  });
+});
 
