@@ -56,8 +56,8 @@ menuList.forEach((item) => {
 });
 
 // project details here *******************************************************
-const cardWorksWrapper = document.getElementById('grid-container');
-const popupCardDescription = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
+const cardWorksBox = document.getElementById('grid-container');
+const popupCardContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
 
 const projectDetails = [
   {
@@ -125,7 +125,7 @@ const projectDetails = [
 const creatProjectDetails = (item) => {
   const snapshootDetails = document.createElement('div');
   if (item.flip === 1) {
-    snapshootDetails.classList.add('snapshoot', 'snapshoot_revers');
+    snapshootDetails.classList.add('snapshoot_revers');
   } else {
     snapshootDetails.classList.add('snapshoot');
   }
@@ -161,7 +161,7 @@ const creatProjectDetails = (item) => {
   </div>`;
 
   snapshootDetails.innerHTML = innerHTML;
-  cardWorksWrapper.appendChild(snapshootDetails);
+  cardWorksBox.appendChild(snapshootDetails);
 };
 
 projectDetails.forEach((item) => creatProjectDetails(item));
@@ -197,7 +197,7 @@ const popupDetails = (item) => {
           <img src="${item.image}" alt="${item.alt}">
         
         <div class="popup-card-details-container"> 
-          <p class="card-main-text popup-card-description">${popupCardDescription}</p>
+          <p class="card-main-text popup-card-description">${popupCardContent}</p>
           <div class="popup-tools-sizing">
             <ul class="card-tools-list">
               ${skillsList.join('')}
@@ -235,7 +235,7 @@ const createPopup = (button, callback = () => null) => {
 
 // Close popup
 const closePopup = () => {
-  const popupCardContainer = document.getElementById('popup-card-container');
+  const popupCardBox = document.getElementById('popup-card-container');
   const popupCloseButton = document.getElementById('popup-close-button');
 
   logo.classList.add('blur-filter');
@@ -253,14 +253,14 @@ const closePopup = () => {
     button.classList.remove('blur-filter');
     mainBody.classList.remove('blur-filter');
   });
-  popupCardContainer.addEventListener('click', () => {
+  popupCardBox.addEventListener('click', () => {
     document.getElementById('popup-project-card-section').innerHTML = '';
     document.body.style.margin = '';
     document.body.style.overflow = '';
     button.classList.remove('blur-filter');
   });
-  for (let i = 0; i < popupCardContainer.childNodes.length; i += 1) {
-    popupCardContainer.childNodes[i].addEventListener('click', (event) => {
+  for (let i = 0; i < popupCardBox.childNodes.length; i += 1) {
+    popupCardBox.childNodes[i].addEventListener('click', (event) => {
       event.stopPropagation();
     });
   }

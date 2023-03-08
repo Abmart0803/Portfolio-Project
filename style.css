@@ -210,10 +210,35 @@ form ul {
 
 #navbar_logo a {
   font-size: 26px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2rem;
   text-decoration: none;
   color: rgb(41, 41, 106);
-  font-weight: bold;
   font-family: "Poppins", sans-serif;
+  animation: rotate infinite  6s;
+}
+
+@keyframes rotate {
+  0% {
+    color: #8993a4;
+    transform: rotate(0);
+  }
+
+  50% {
+    color: #204fa1;
+    transform: rotate(170deg);
+  }
+
+  75% {
+    color: #b0171e;
+    transform: rotate(270deg);
+  }
+
+  100% {
+    color: #0c8d0c;
+    transform: rotate(360deg);
+  }
 }
 
 .About {
@@ -352,10 +377,13 @@ form ul {
   rotate: 90deg;
 }
 
-.popup-details-container > img {
-  width: 100%;
-  margin: 20px 0 12px;
-}
+/* .popup-details-container > img { */
+
+/* width: 50%; */
+
+/* margin: 20px 0 12px; */
+
+/* } */
 
 .card-button > img {
   width: 18px;
@@ -376,7 +404,7 @@ form ul {
 
 /* work section start  */
 .grid-container {
-  height: 2728px;
+  height: 3728px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   justify-content: center;
@@ -463,7 +491,7 @@ form ul {
   overflow-x: hidden;
   background: transparent;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 30px;
   margin: auto;
 }
 
@@ -712,7 +740,7 @@ input:invalid {
 
 .snapshoot {
   gap: 12px;
-  width: 327px;
+  width: 227px;
   left: 24px;
   right: 24px;
   background-color: white;
@@ -802,7 +830,7 @@ input:invalid {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   padding: 16px;
-  width: 80%;
+  width: 60%;
   margin: auto;
   margin-bottom: 100px;
 }
@@ -1077,6 +1105,16 @@ input:invalid {
     display: flex;
     flex-direction: row-reverse;
     margin: 0% 10%;
+    width: 962px;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #dfe1e6;
+  }
+
+  .snapshoot_revers > img {
+    width: 50%;
+    padding: 0 24px;
   }
 
   .mobile_version_img {
@@ -1342,7 +1380,7 @@ input:invalid {
   }
 
   .popup-card {
-    width: 80%;
+    /* width: 80%; */
     margin: auto;
     padding-bottom: 80px;
     margin-bottom: 80px;
