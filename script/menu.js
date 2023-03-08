@@ -35,11 +35,5 @@ contact.addEventListener('submit', (event) => {
   const errorMsg = document.querySelector('.errorsDisplay');
   const validEmail = !isUpperCaseEmail(email);
 
-  if (validEmail) {
-    errorMsg.style.display = 'none';
-    contact.submit();
-  } else {
-    errorMsg.style.display = 'block';
-    errorMsg.innerHTML = 'Please write email in small letters';
-  }
+  
 });
