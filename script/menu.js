@@ -53,13 +53,13 @@ const data = [
     company: 'CANOPY',
     role: 'Back End Dev',
     year: '2015',
-    img1: 'assets/images/project-1.svg',
-    img: 'assets/images/Snapshoot Portfolio.svg',
+    img1: 'images/project-1.svg',
+    img: 'images/Snapshoot Portfolio.svg',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     languages: ['html', 'css', 'javascript'],
-    liveLink: 'https://ismayito.github.io/Portfolio-/',
-    sourceCode: 'https://github.com/ismayito/Portfolio-',
+    liveLink: 'https://abmart0803.github.io/Portfolio-Project/',
+    sourceCode: 'https://github.com/Abmart0803/Portfolio-Project',
   },
   {
     id: 2,
@@ -67,13 +67,13 @@ const data = [
     company: 'FACEBOOK',
     role: 'Full Stack Dev',
     year: '2015',
-    img1: 'assets/images/project-2.svg',
-    img: 'assets/images/project-4.svg',
+    img1: 'images/project-2.svg',
+    img: 'images/project-4.svg',
     description:
       'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     languages: ['html', 'Ruby on rails', 'css', 'javascript'],
-    liveLink: 'https://ismayito.github.io/Portfolio-/',
-    sourceCode: 'https://github.com/ismayito/Portfolio-',
+    liveLink: 'https://abmart0803.github.io/Portfolio-Project/',
+    sourceCode: 'https://github.com/Abmart0803/Portfolio-Project',
   },
   {
     id: 3,
@@ -81,13 +81,13 @@ const data = [
     company: 'FACEBOOK',
     role: 'Full Stack Dev',
     year: '2015',
-    img1: 'assets/images/project-3.svg',
-    img: 'assets/images/project-1.svg',
+    img1: 'images/project-3.svg',
+    img: 'images/project-1.svg',
     description:
       "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     languages: ['html', 'Ruby on rails', 'css', 'javascript'],
-    liveLink: 'https://ismayito.github.io/Portfolio-/',
-    sourceCode: 'https://github.com/ismayito/Portfolio-',
+    liveLink: 'https://abmart0803.github.io/Portfolio-Project/',
+    sourceCode: 'https://github.com/Abmart0803/Portfolio-Project',
   },
   {
     id: 4,
@@ -95,13 +95,13 @@ const data = [
     company: 'Uber',
     role: 'Lead Developer',
     year: '2018',
-    img1: 'assets/images/project-4.svg',
-    img: 'assets/images/project-2.svg',
+    img1: 'images/project-4.svg',
+    img: 'images/project-2.svg',
     description:
       'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     languages: ['html', 'Ruby on rails', 'css', 'javascript'],
-    liveLink: 'https://ismayito.github.io/Portfolio-/',
-    sourceCode: 'https://github.com/ismayito/Portfolio-',
+    liveLink: 'https://abmart0803.github.io/Portfolio-Project/',
+    sourceCode: 'https://github.com/Abmart0803/Portfolio-Project',
   },
 ];
 
@@ -124,7 +124,7 @@ function createPopUp(
         <div class="modal-head">
           <h2 class="title">${title}</h2>
           <img
-            src="assets/images/close-window.svg"
+            src="images/close-window.svg"
             alt="close-window"
             class="close-window"
             id="close-${id}"
@@ -135,14 +135,14 @@ function createPopUp(
           <li class="counter">
             <img
               class="img-counter"
-              src="assets/images/Counter.svg"
+              src="images/Counter.svg"
               alt="Counter"
             />${role}
           </li>
           <li class="counter">
             <img
               class="img-counter"
-              src="assets/images/Counter.svg"
+              src="images/Counter.svg"
               alt="Counter"
             />${year}
           </li>
@@ -167,19 +167,19 @@ function createPopUp(
             <ul class="languages">
             ${languages.map((item) => `<li>${item}</li>`).join('')}
             </ul>
-            <img src="assets/images/vector 4.svg" alt="line" class="line" />
+            <img src="images/vector 4.svg" alt="line" class="line" />
             <div class="window-buttons">
               <button class="window-btn">
               <a href='${liveLink}' class="PopUp-link">
                See live
-                <span><img src="assets/images/live.svg" alt="live" /></span>
+                <span><img src="images/live.svg" alt="live" /></span>
                 
               </button>
               <button class="window-btn">
               <a href='${sourceCode}' class="PopUp-link">
                 See source
                 <span
-                  ><img src="assets/images/git-modal.svg" alt="source code"
+                  ><img src="images/git-modal.svg" alt="source code"
                 /></span>
               </a>
               </button>

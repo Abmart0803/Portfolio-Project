@@ -65,15 +65,27 @@ section.mobile-menu a {
   font-weight: 700;
   line-height: 2rem;
   text-decoration: none;
-  animation: animate 2s;
+  animation: rotate infinite  4s;
 }
 
-@keyframes animate {
-  form {
-    transform: rotate(0deg);
+@keyframes rotate {
+  0% {
+    color: #8993a4;
+    transform: rotate(0);
   }
 
-  to {
+  50% {
+    color: #204fa1;
+    transform: rotate(170deg);
+  }
+
+  75% {
+    color: #b0171e;
+    transform: rotate(270deg);
+  }
+
+  100% {
+    color: #0c8d0c;
     transform: rotate(360deg);
   }
 }
@@ -83,7 +95,7 @@ section.mobile-menu a {
 }
 
 .headline {
-  background-image: url("assets/images/header-shapes\ mobile.svg");
+  background-image: url("./images/header-shapes\ mobile.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 700px;
@@ -400,11 +412,14 @@ section.mobile-menu a {
 }
 
 .about-btn {
-  font-size: 1.7rem;
-  line-height: 2.4rem;
-  border-radius: 0.8rem;
-  margin-bottom: 4.8rem;
-  width: 35% !important;
+  margin-top: 24px;
+  padding: 12px;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  background-color: transparent;
+  font-size: 17px;
+  width: fit-content;
 }
 
 .about-languages {
@@ -465,7 +480,7 @@ section.mobile-menu a {
   display: flex;
   flex-direction: column;
   height: auto;
-  background-image: url("assets/images/contact-bg.svg");
+  background-image: url("./images/contact-form\ backgroung.png");
   background-position: right;
   background-repeat: no-repeat;
   background-color: #6070ff;
@@ -569,14 +584,17 @@ section.mobile-menu a {
   align-items: center;
 }
 
-.error-message {
-  background-color: #f00;
-  padding: 1.5rem;
-  color: #fff;
-  font-size: 1.6rem;
-  border: 1px dashed #fff;
-  border-radius: 8px;
-  margin: 5px 0;
+.errorsDisplay {
+  padding: 5px;
+  width: 300px;
+  border-radius: 10px;
+  z-index: -1;
+  border: 1px solid red;
+  display: none;
+  font-size: 18px;
+  line-height: 1.5em;
+  background: #ffdce2;
+  font-weight: bold;
 }
 
 /* desktop version css styles */
@@ -584,6 +602,19 @@ section.mobile-menu a {
 @media screen and (min-width: 768px) {
   .navbar {
     display: none;
+  }
+
+  .errorsDisplay {
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+    z-index: -1;
+    border: 1px solid red;
+    display: none;
+    font-size: 18px;
+    line-height: 1.5em;
+    background: #ffdce2;
+    font-weight: bold;
   }
 
   .header {
@@ -615,7 +646,7 @@ section.mobile-menu a {
   }
 
   .headilne-desk {
-    background-image: url("assets/images/Header bg-desk.svg");
+    background-image: url("./images/Header\ bg\ desktop.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     height: 721px;
@@ -818,7 +849,7 @@ section.mobile-menu a {
   }
 
   .footer {
-    background-image: url("assets/images/contact form background shapes.svg");
+    background-image: url("./images/contact-form\ backgroung.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
