@@ -221,7 +221,7 @@ data.forEach((item) => {
     document.getElementById(`popup-project-${id}`).classList.add('visible');
   });
   // close event
-  document.getElementById(`close-${id}`).addEventListener('click', () => {
+    document.getElementById(`close-${id}`).addEventListener('click', () => {
     document.getElementById(`popup-project-${id}`).classList.remove('visible');
   });
 });
