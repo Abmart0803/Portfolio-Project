@@ -1,4 +1,23 @@
-// *******************************
+const menuBtn = document.getElementById('menu-close-btn');
+const menuSection = document.querySelector('section.mobile-menu');
+const closeButton = document.getElementById('close-btn');
+const menuItems = document.getElementsByClassName('menu-item');
+
+for (let i = 0; i < menuItems.length; i += 1) {
+  menuItems[i].addEventListener('click', () => {
+    menuSection.classList.remove('visible');
+  });
+}
+
+menuBtn.addEventListener('click', () => {
+  menuSection.classList.add('visible');
+});
+
+closeButton.addEventListener('click', () => {
+  menuSection.classList.remove('visible');
+});
+
+// *******************************Cient Validation Start here.*******************************
 const contact = document.getElementById('form');
 
 const isUpperCaseEmail = (email) => {
@@ -8,7 +27,7 @@ const isUpperCaseEmail = (email) => {
   return false;
 };
 
-  contact.addEventListener('submit', (event) => {
+contact.addEventListener('submit', (event) => {
   event.preventDefault();
   const email = event.target.email.value;
   const errorMsg = document.querySelector('.errorsDisplay');
@@ -23,254 +42,185 @@ const isUpperCaseEmail = (email) => {
   }
 });
 
-// nav menu Headers. ***************************************************
-const logo = document.getElementById('navbar_logo');
-const button = document.getElementById('btn');
-const menuShow = document.getElementById('menu-show');
-const home = document.getElementById('About');
-const closeMenus = document.getElementById('menu-close');
-const menuList = document.querySelectorAll('.menu-item');
-const mainBody = document.getElementById('main');
 
-const openMenu = () => {
-  menuShow.classList.add('show-menu');
-  logo.classList.add('blur-filter');
-  home.classList.add('blur-filter');
-  button.classList.add('blur-filter');
-  mainBody.classList.add('blur-filter');
-};
+// project-details-window-popup
 
-const closeMenu = () => {
-  menuShow.classList.remove('show-menu');
-  logo.classList.remove('blur-filter');
-  home.classList.remove('blur-filter');
-  button.classList.remove('blur-filter');
-  mainBody.classList.remove('blur-filter');
-};
-
-button.addEventListener('click', openMenu);
-closeMenus.addEventListener('click', closeMenu);
-
-menuList.forEach((item) => {
-  item.addEventListener('click', closeMenu);
-});
-
-// project details here *******************************************************
-const cardWorksBox = document.getElementById('grid-container');
-const popupCardContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
-
-const projectDetails = [
+const data = [
   {
-    title: 'Tonic',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups are required.',
-    image: './image/desktop-version/Snapshoot Portfolio.png',
-    alt: 'tonic project image',
-    companyRoles: ['Canopy', 'Back End Dev', '2015'],
-    skills: ['html', 'css', 'javascript'],
-    liveLink: { link: './index.html', text: 'See live' },
-    sourceLink: { link: 'https://github.com/Abmart0803/Portfolio-Project' },
-    buttonText: 'See Project',
     id: 1,
+    title: 'Tonic',
+    company: 'CANOPY',
+    role: 'Back End Dev',
+    year: '2015',
+    img1: 'images/project-1.svg',
+    img: 'images/Snapshoot Portfolio.svg',
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    languages: ['html', 'css', 'javascript'],
+    liveLink: 'https://abmart0803.github.io/Portfolio-Project/',
+    sourceCode: 'https://github.com/Abmart0803/Portfolio-Project',
   },
-
   {
-    title: 'Multi_Post Stories',
+    id: 2,
+    title: 'Multi-Post Stories',
+    company: 'FACEBOOK',
+    role: 'Full Stack Dev',
+    year: '2015',
+    img1: 'images/project-2.svg',
+    img: 'images/project-4.svg',
     description:
       'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    image: './image/Snapshoot Portfolio (1).png',
-    alt: 'Multiple project image',
-    companyRoles: ['FACEBOOK', 'Back End Dev', '2015'],
-    skills: ['html', 'css', 'javascript'],
-    liveLink: { link: './index.html', text: 'See live' },
-    sourceLink: {
-      link: 'https://github.com/Abmart0803/Portfolio-Project',
-    },
-    buttonText: 'See Project',
-    flip: 1,
-    id: 2,
+    languages: ['html', 'Ruby on rails', 'css', 'javascript'],
+    liveLink: 'https://abmart0803.github.io/Portfolio-Project/',
+    sourceCode: 'https://github.com/Abmart0803/Portfolio-Project',
   },
-
   {
-    title: 'Tonic',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups are required.',
-    image: './image/Snapshoot Portfolio (2).png',
-    alt: 'tonic project image',
-    companyRoles: ['FACEBOOK 360', 'Back End Dev', '2015'],
-    skills: ['html', 'css', 'javascript'],
-    liveLink: { link: './index.html', text: 'See live' },
-    sourceLink: {
-      link: 'https://github.com/Abmart0803/Portfolio-Project',
-    },
-    buttonText: 'See Project',
     id: 3,
+    title: 'Facebook 360',
+    company: 'FACEBOOK',
+    role: 'Full Stack Dev',
+    year: '2015',
+    img1: 'images/project-3.svg',
+    img: 'images/project-1.svg',
+    description:
+      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    languages: ['html', 'Ruby on rails', 'css', 'javascript'],
+    liveLink: 'https://abmart0803.github.io/Portfolio-Project/',
+    sourceCode: 'https://github.com/Abmart0803/Portfolio-Project',
   },
   {
-    title: 'Uber Navigation',
-    description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups are required.',
-    image: './image/Snapshoot Portfolio (3).png',
-    alt: 'tonic project image',
-    companyRoles: ['Uber', 'Lead Developer', '2018'],
-    skills: ['html', 'css', 'javascript'],
-    liveLink: { link: './index.html', text: 'See live' },
-    sourceLink: { link: 'https://github.com/Abmart0803/Portfolio-Project' },
-    buttonText: 'See Project',
-    flip: 1,
     id: 4,
+    title: 'Uber Navigation',
+    company: 'Uber',
+    role: 'Lead Developer',
+    year: '2018',
+    img1: 'images/project-4.svg',
+    img: 'images/project-2.svg',
+    description:
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    languages: ['html', 'Ruby on rails', 'css', 'javascript'],
+    liveLink: 'https://abmart0803.github.io/Portfolio-Project/',
+    sourceCode: 'https://github.com/Abmart0803/Portfolio-Project',
   },
 ];
 
-const creatProjectDetails = (item) => {
-  const snapshootDetails = document.createElement('div');
-  if (item.flip === 1) {
-    snapshootDetails.classList.add('snapshoot_revers');
-  } else {
-    snapshootDetails.classList.add('snapshoot');
-  }
-
-  const roles = item.companyRoles.map((value, index) => {
-    if (index !== 0) {
-      return `<div class="card-bullet-separator"></div> <span class="card-canopy card-canopy-details">${value}</span>`;
-    }
-    return `<span class="card-canopy">${value}</span>`;
-  });
-
-  const skillsList = item.skills.map(
-    (count) => `<li class="card-tools">${count}</li>`,
-  );
-
-  const innerHTML = `<img src="${item.image}" alt="${item.alt}">
-  <div class="card-sizing">
-    <h2 class="card-title-text">${item.title}</h2>
-    <div class="card-list">
-      ${roles.join('')}
-    </div>
-    <p class="card-main-text">${item.description}</p>
-    <div>
-      <ul class="card-tools-list">
-        ${skillsList.join('')}
-      </ul>
-    </div>
-    <div class="card-button-box">
-      <button card-id=${
-  item.id
-} class="card-button popup-card-button">See Project</button>
-    </div>
-  </div>`;
-
-  snapshootDetails.innerHTML = innerHTML;
-  cardWorksBox.appendChild(snapshootDetails);
-};
-
-projectDetails.forEach((item) => creatProjectDetails(item));
-
-const popupDetails = (item) => {
-  const roles = item.companyRoles.map((value, index) => {
-    if (index !== 0) {
-      return `<div class="card-bullet-separator"></div> <span class="card-canopy card-canopy-details">${value}</span>`;
-    }
-    return `<span class="card-canopy">${value}</span>`;
-  });
-
-  const skillsList = item.skills.map(
-    (count) => `<li class="card-tools">${count}</li>`,
-  );
-
-  const innerHtml = `<div id="popup-card-container"></div>
-  <section id="popup-card-section">
-    <article class="popup-card">
-      <header class="popup-details-header">
-        <nav class="popup-card-details">
-          <h2 class="card-title-text">${item.title}</h2>
-          <button id="popup-close-button" class="popup-close-button">
-            <img src="./image/Popup-close-Icon.png" alt="popup close icon">
-          </button>
-        </nav>
-        <div class="card-list">
-          ${roles.join('')}
+function createPopUp(
+  id,
+  title,
+  company,
+  description,
+  role,
+  year,
+  img1,
+  img,
+  languages,
+  liveLink,
+  sourceCode,
+) {
+  return `
+  <section class="popup-window"  id="popup-project-${id}">
+   <section class="modal-mobile" id="popup-project-${id}">
+        <div class="modal-head">
+          <h2 class="title">${title}</h2>
+          <img
+            src="images/close-window.svg"
+            alt="close-window"
+            class="close-window"
+            id="close-${id}"
+          />
         </div>
-      </header>
-      <section class="popup-details-container">
-        
-          <img src="${item.image}" alt="${item.alt}">
-        
-        <div class="popup-card-details-container"> 
-          <p class="card-main-text popup-card-description">${popupCardContent}</p>
-          <div class="popup-tools-sizing">
-            <ul class="card-tools-list">
-              ${skillsList.join('')}
-            </ul>
-            <div class="popup-card-separator"></div>
-            <div class="popup-card-links">
-              <a href="${
-  item.liveLink.link
-}" target="_blank" class="card-button popup-button">
-                <span>See live</span>
-                <img src="./image/live-link-Icon.png" alt="live link icon">
-              </a>
-              <a href="${
-  item.sourceLink.link
-}" target="_blank" class="card-button popup-button">
-                <span>See source</span>
-                <img src="./image/github-Vector.png" alt="github link icon">
-              </a>
+        <ul class="categories">
+          <li class="item1">${company}</li>
+          <li class="counter">
+            <img
+              class="img-counter"
+              src="images/Counter.svg"
+              alt="Counter"
+            />${role}
+          </li>
+          <li class="counter">
+            <img
+              class="img-counter"
+              src="images/Counter.svg"
+              alt="Counter"
+            />${year}
+          </li>
+        </ul>
+        <img
+          src="${img1}"
+          class="project-1 project"
+          alt="project-one"
+        />
 
+        <img
+          src="${img}"
+          class="project-1 project-1-desktop"
+          id="project1-desktop"
+          alt="project-one"
+        />
+        <div class="project-wrapper">
+          <article class="intro-works">
+           ${description}
+          </article>
+          <div class="lang-buttons">
+            <ul class="languages">
+            ${languages.map((item) => `<li>${item}</li>`).join('')}
+            </ul>
+            <img src="images/vector 4.svg" alt="line" class="line" />
+            <div class="window-buttons">
+              <button class="window-btn">
+              <a href='${liveLink}' class="PopUp-link">
+               See live
+                <span><img src="images/live.svg" alt="live" /></span>
+                
+              </button>
+              <button class="window-btn">
+              <a href='${sourceCode}' class="PopUp-link">
+                See source
+                <span
+                  ><img src="images/git-modal.svg" alt="source code"
+                /></span>
+              </a>
+              </button>
             </div>
           </div>
         </div>
       </section>
-    </article>
-  </section>`;
-  return innerHtml;
-};
+    </section>
 
-const createPopup = (button, callback = () => null) => {
-  const id = parseInt(button.getAttribute('card-id'), 10);
-  const data = projectDetails.filter((item) => item.id === id);
-  document.getElementById('popup-project-card-section').innerHTML = popupDetails(data[0]);
-  return callback();
-};
+  `;
+}
 
-// Close popup
-const closePopup = () => {
-  const popupCardBox = document.getElementById('popup-card-container');
-  const popupCloseButton = document.getElementById('popup-close-button');
-
-  logo.classList.add('blur-filter');
-  home.classList.add('blur-filter');
-  button.classList.add('blur-filter');
-  mainBody.classList.add('blur-filter');
-
-  popupCloseButton.addEventListener('click', () => {
-    document.getElementById('popup-project-card-section').innerHTML = '';
-    document.body.style.margin = '';
-    document.body.style.overflow = '';
-
-    logo.classList.remove('blur-filter');
-    home.classList.remove('blur-filter');
-    button.classList.remove('blur-filter');
-    mainBody.classList.remove('blur-filter');
-  });
-  popupCardBox.addEventListener('click', () => {
-    document.getElementById('popup-project-card-section').innerHTML = '';
-    document.body.style.margin = '';
-    document.body.style.overflow = '';
-    button.classList.remove('blur-filter');
-  });
-  for (let i = 0; i < popupCardBox.childNodes.length; i += 1) {
-    popupCardBox.childNodes[i].addEventListener('click', (event) => {
-      event.stopPropagation();
-    });
-  }
-};
-
-const cardButton = document.querySelectorAll('.popup-card-button');
-cardButton.forEach((button) => {
-  button.addEventListener('click', () => {
-    document.body.style.overflow = 'hidden';
-    createPopup(button, closePopup);
-  });
+let final = '';
+data.forEach((item) => {
+  const html = createPopUp(
+    item.id,
+    item.title,
+    item.company,
+    item.description,
+    item.role,
+    item.year,
+    item.img1,
+    item.img,
+    item.languages,
+    item.liveLink,
+    item.sourceCode,
+  );
+  final += html;
 });
 
+document.getElementById('popup-container').innerHTML = final;
+
+// event listeners
+
+data.forEach((item) => {
+  // open event
+  const { id } = item;
+  document.getElementById(`openpop-${id}`).addEventListener('click', () => {
+    document.getElementById(`popup-project-${id}`).classList.add('visible');
+  });
+  // close event
+  document.getElementById(`close-${id}`).addEventListener('click', () => {
+    document.getElementById(`popup-project-${id}`).classList.remove('visible');
+  });
+});
